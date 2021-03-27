@@ -34,7 +34,7 @@ function iniciarSesion() {
 
     document.getElementById("matar").style.display = "block";
 
-    actualizarFotoUserEnPantalla("Elliot");
+    actualizarFotoUserEnPantalla("elliot");
 
            }
   
