@@ -1,7 +1,7 @@
 let nombreSecreto1 = "terminator";
 let nombreSecreto2 = "bart";
 let nombreSecreto3 = "fiona";
-let nombreHacker = "elliot";
+
 
 let vidas = 3000;
 
@@ -14,6 +14,7 @@ window.onload = function () {
   actualizarVidasEnPantalla();
 };
 
+const nombreHacker = "RWxsaW90";
 
 function iniciarSesion() {
  
@@ -32,6 +33,8 @@ function iniciarSesion() {
     if(nombreIngresado==nombreHacker){
 
     document.getElementById("matar").style.display = "block";
+
+    actualizarFotoUserEnPantalla("Elliot");
 
            }
   
@@ -56,7 +59,15 @@ function iniciarSesion() {
 
 //Funciones que actualizan el valor de las variables en el HTML
 function cargarNombreEnPantalla() {
+
+  if(nombreIngresado!="RWxsaW90"){
   document.getElementById("nombre").innerHTML = "Bienvenido/a " + nombreIngresado;
+
+}else{
+
+  document.getElementById("nombre").innerHTML = "Bienvenido/a " + "Elliot";
+
+}
 }
 
 function actualizarVidasEnPantalla() {
@@ -72,6 +83,8 @@ var termi = document.getElementById("terminator");
 function actualizarFotoUserEnPantalla(foto) {
  termi.setAttribute("src", "img/"+foto+".jpg");
 }
+
+
 
 /***************************Funciones a completar***********/ 
 
