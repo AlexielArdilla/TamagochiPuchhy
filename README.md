@@ -12,4 +12,6 @@ Todas las acciones le cuestan vida, y le restan Energía.
 
 Este es el final del juego.
 
+El live es: https://alexielardilla.github.io/TamagochiPuchhy/
+
 ### Saludos Alexx
